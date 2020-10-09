@@ -4,6 +4,7 @@ const LoginRoutes = require('./LoginRoutes');
 const CustomerRoutes = require('./CustomerRoutes');
 const FoodStorageRoutes = require('./FoodStorageRoutes');
 const DailyConsumptionRoutes = require('./DailyConsumptionRoutes');
+const MenuItemRoutes = require('./MenuItemRoutes')
 
 const router = Router();
 
@@ -12,5 +13,6 @@ router.use('/login', LoginRoutes);
 router.use('/customers',CustomerRoutes);
 router.use('/foodStorages',FoodStorageRoutes);
 router.use('/dailyConsumptions',DailyConsumptionRoutes);
+router.use('/menuItems',MenuItemRoutes);
 
 module.exports = router;
