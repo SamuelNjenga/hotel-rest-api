@@ -50,7 +50,7 @@ exports.deleteCustomer = async (req, res, next) => {
         });
         res.status(200).json({
             data: null,
-            message: `Customer ${userId} has been deleted`
+            message: `Customer ${customerId} has been deleted`
         });
     } catch (error) {
         next(error)
