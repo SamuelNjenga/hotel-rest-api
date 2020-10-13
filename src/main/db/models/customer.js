@@ -17,6 +17,13 @@ module.exports = (sequelize, DataTypes) => {
           allowNull: false
         }
       });
+      Customer.hasMany(models.Order,{
+        onDelete:"cascade",
+        foreignKey:{
+          name:'customerId',
+          allowNull:false
+        }
+      });
     }
   };
   Customer.init({

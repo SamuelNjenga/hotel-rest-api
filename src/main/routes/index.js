@@ -7,6 +7,7 @@ const DailyConsumptionRoutes = require('./DailyConsumptionRoutes');
 const MenuItemRoutes = require('./MenuItemRoutes')
 const CustomerCartRoutes = require('./CustomerCartRoutes')
 const CustomerCartItemRoutes = require('./CustomerCartItemRoutes')
+const OrderRoutes = require('./OrderRoutes')
 
 const router = Router();
 
@@ -18,5 +19,6 @@ router.use('/dailyConsumptions',DailyConsumptionRoutes);
 router.use('/menuItems',MenuItemRoutes);
 router.use('/customerCarts',CustomerCartRoutes);
 router.use('/customerCartItems',CustomerCartItemRoutes);
+router.use('/orders', OrderRoutes)
 
 module.exports = router;
