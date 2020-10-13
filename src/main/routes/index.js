@@ -5,6 +5,7 @@ const CustomerRoutes = require('./CustomerRoutes');
 const FoodStorageRoutes = require('./FoodStorageRoutes');
 const DailyConsumptionRoutes = require('./DailyConsumptionRoutes');
 const MenuItemRoutes = require('./MenuItemRoutes')
+const CustomerCartRoutes = require('./CustomerCartRoutes')
 
 const router = Router();
 
@@ -14,5 +15,6 @@ router.use('/customers',CustomerRoutes);
 router.use('/foodStorages',FoodStorageRoutes);
 router.use('/dailyConsumptions',DailyConsumptionRoutes);
 router.use('/menuItems',MenuItemRoutes);
+router.use('/customerCarts',CustomerCartRoutes);
 
 module.exports = router;
